@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* margin: 0 auto; */
   text-align: center;
 }
 
@@ -39,4 +37,59 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 2rem;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header .subtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.dashboard-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dashboard-content section {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 1.5rem;
+}
+
+.metrics-section {
+  margin-bottom: 2rem;
+}
+
+.visualization-section {
+  margin-bottom: 2rem;
+}
+
+.table-section {
+  overflow-x: auto;
 }

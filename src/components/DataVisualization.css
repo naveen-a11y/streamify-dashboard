@@ -1,0 +1,52 @@
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* Grid layout for charts that adapts to screen size */
+.charts-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.chart-wrapper {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-wrapper h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Ensure charts remain visible on smaller screens */
+@media (max-width: 1024px) {
+  .charts-row {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-wrapper {
+    padding: 1rem;
+  }
+}
+
+/* Fix for chart responsiveness */
+.recharts-responsive-container {
+  min-height: 300px;
+  width: 100% !important; /* Force full width */
+  flex: 1;
+}

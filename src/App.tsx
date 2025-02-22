@@ -7,7 +7,7 @@ const KeyMetrics = lazy(() => import("./components/KeyMetrics"));
 const DataVisualization = lazy(() => import("./components/DataVisualization"));
 const DataTable = lazy(() => import("./components/DataTable"));
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="dashboard">
       <header className="dashboard-header">
@@ -41,6 +41,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;
